@@ -245,6 +245,7 @@ public function getalldata(){
 
 
 public function getid($id){
+
   $get=explode(" and ",$id);
   
   
