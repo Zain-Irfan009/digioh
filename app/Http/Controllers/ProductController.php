@@ -244,7 +244,21 @@ public function getalldata(){
 
 
 
-
-
+public function getid($id){
+  $get=explode(" and ",$id);
+  
+  
+  
+  
+    $products=Products::whereIn('title',$get)->get();
+  
+  
+  return view('getproductspecif',compact('products'));
+  
+  
+  
+  
+  }
+  
 
 }

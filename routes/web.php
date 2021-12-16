@@ -50,3 +50,8 @@ Route::get('/settings', function () {
 Route::get('/getproductmanually', [\App\Http\Controllers\ProductController::class, 'getproductmanually'])->middleware(['verify.shopify']);
 
 Route::get('/getproducts', [\App\Http\Controllers\ProductController::class, 'getalldata']);
+
+
+
+
+Route::get('/getproducts/{id}', [\App\Http\Controllers\ProductController::class, 'getid']);
